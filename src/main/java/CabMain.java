@@ -15,6 +15,8 @@ public class CabMain {
             short minutes = scanner.nextShort();
             cost += CabFare.fareCalc(distance,minutes);
         }
+        System.out.println("\nTotal number of rides: "+rides);
         System.out.println("Total cost for all rides: "+cost);
+        System.out.println("Average fare per ride : "+cost/rides);
     }
 }
